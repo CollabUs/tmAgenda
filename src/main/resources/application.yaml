@@ -1,0 +1,22 @@
+spring:
+  profiles: dev
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/tm_db
+
+---
+spring:
+  profiles: test
+  datasource:
+    username: laxmil5e_umang
+    password: "!Mpassword"
+    url: jdbc:mysql://diveshpanwar.website:3306/laxmil5e_umang
+
+---   
+spring:
+  profiles: prod
+  datasource:
+    username: laxmil5e_umang
+    password: "!Mpassword"
+    url: jdbc:mysql://diveshpanwar.website:3306/laxmil5e_umang
